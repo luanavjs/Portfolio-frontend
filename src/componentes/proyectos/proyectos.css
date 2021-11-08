@@ -1,23 +1,25 @@
-.contacto {
+
+.proyectos {
     display:flex;
     flex-direction:column;
-    align-items:center;
-    padding: 3rem;
-
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    font-family: 'Montserrat', sans-serif;
 }
-.contacto h2 {
-    color:black;
+
+.proyectos h2 {
     text-align: center;
     font-size: 50px;
     letter-spacing: 3px;
     font-weight: 500;
 }
+
+
 @media only screen and (max-width:720px) {
-    .contacto h2 {
+    .proyectos h2 {
         font-size: 30px;
     }
-}
-
-.contacto span {
-    font-size: 20px;
 }

@@ -1,0 +1,17 @@
+.redes {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.redes-icon-div {
+    padding:6px;
+    cursor:pointer;
+    margin:6px;
+
+}
+
+.redes-icon {
+    height: 40px;
+}

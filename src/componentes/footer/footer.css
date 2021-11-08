@@ -1,4 +1,14 @@
 .footer {
-    background-color: rgba(128, 128, 128, 0.775);
-    
+    background-color: rgb(244,194,183);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:2rem;
 }
+
+.footer p {
+    font-size:20px;
+    font-weight: 500;
+}
+

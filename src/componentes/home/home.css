@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+  }
+
 .home {
-    background-color: pink;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4rem;
+}
+.homee{
+    padding-bottom: 5rem;
+}
+.intro {
+    margin-top: 9%;
+}
+.intro h1 {
+    font-weight: 500;
+    font-size: 60px;
 }
 
-.puntos {
-   margin: 40px 0;
-   border-bottom: 1px solid black;
-
+.intro p {
+    font-weight: 300;
+    font-size: 25px;
 }
 
-.exp-laboral {
-    list-style: none;   
+.botones{
+    margin:
 }
+

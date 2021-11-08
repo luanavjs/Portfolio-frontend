@@ -1,41 +1,39 @@
 import React from 'react';
 import './home.css';
-import Intro from '../intro/intro'
 import {Link} from 'react-router-dom';
 import {Container,Row,Col} from 'react-bootstrap';
+import lulu from '../media/img-lulu.svg'
+import CustomButton from '../button/button'
+import Conocimientos from '../conocimientos/conocimientos'
+import Proyectos from '../proyectos/proyectos'
+import Contacto from '../contacto/contacto'
 
 const Home = () => {
     return(
         <div className="home">
-            <Intro titulo="Luana Vallejos"/>
-            <Container>
-                <h2 className="puntos">Skills</h2>
+            <Container className="homee">
                 <Row>
-                    <Col xs={12} sm={4}>
-                        Manipulation
+                    <Col sm={4}>
+                        <div>
+                            <img src={lulu} alt="imagen de lulu" className="img_lulu"></img>
+                        </div> 
                     </Col>
-                    <Col xs={12} sm={4}>
-                        Psychological abuse
-                    </Col>
-                    <Col xs={12} sm={4}>
-                        Being perfect
+                    <Col sm={8} className="intro">
+                    <h2>¡Hola! Soy</h2>
+                    <h1 className="titulo">Luana Vallejos</h1>
+                        <p className="descripcion">Desarrolladora Fullstack JS, estudiante de Informática y fan de los gatitos 💖</p>
+                        <div className="botones">
+                            <CustomButton texto="Contacto" link="#contacto"/>
+
+                            <CustomButton texto="Descargar CV"/>
+                        </div>
+                        
                     </Col>
                 </Row>
-                <h2 className="puntos">Experiencia laboral</h2>
-                <ul className="exp-laboral">
-                    <li>
-                        <h5>Primer trabajo</h5>
-                        <p>Lorem ipsum dolor</p>
-                    </li>
-                    <li>
-                        <h5>Segundo trabajo</h5>
-                        <p>Lorem ipsum dolor</p>
-                    </li>
-                </ul>
             </Container>
-            
-            
-            <Link to="/contacto">Ir a Contacto</Link>
+            <Conocimientos/>
+            <Proyectos/>
+            <Contacto/>
         </div>
     );
 }

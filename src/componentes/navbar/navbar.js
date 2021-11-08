@@ -3,19 +3,23 @@ import './navbar.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Menu = () => {
     return (
-        <Navbar className="menu">
+        <Navbar collapseOnSelect expand="lg" className="menu" fixed="top">
             <Container>
-                <Navbar.Brand href="#home">Luana Vallejos</Navbar.Brand>
+            <Navbar.Brand href="#home">Luana</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/contacto">Contacto</Nav.Link>
-                <Nav.Link href="#pricing">Proyectos</Nav.Link>
+                <Nav.Link href="#skills">Conocimientos</Nav.Link>
+                <Nav.Link href="#proyectos">Proyectos</Nav.Link>
+                <Nav.Link href="#contacto">Contacto</Nav.Link>
                 </Nav>
+            </Navbar.Collapse>
             </Container>
-        </Navbar>
+            </Navbar>
     );
 }
 

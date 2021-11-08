@@ -4,7 +4,8 @@ import './footer.css';
 const Footer = () => {
     return(
         <footer className="footer">
-            Hecho con ❤️ por Lu
+            <p>Hecho con ❤️ por Lu</p>
+            
         </footer>
     );
 }
