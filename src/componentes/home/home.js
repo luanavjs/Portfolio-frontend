@@ -1,6 +1,5 @@
 import React from 'react';
 import './home.css';
-import {Link} from 'react-router-dom';
 import {Container,Row,Col} from 'react-bootstrap';
 import lulu from '../media/img-lulu.svg'
 import CustomButton from '../button/button'

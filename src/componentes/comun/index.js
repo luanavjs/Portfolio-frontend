@@ -9,7 +9,7 @@ const ContactoIcons = () => {
             return(
                 <a href={item.link}>
                     <div className="redes-icon-div">
-                        <img src={item.icon} className="redes-icon"></img>
+                        <img src={item.icon} className="redes-icon" alt="imagen de red social"></img>
                     </div>
                 </a>
             )

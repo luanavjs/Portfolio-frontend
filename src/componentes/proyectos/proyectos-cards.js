@@ -25,7 +25,7 @@ const ProyectosCards = ({proyecto}) =>{
                     })}
                 </div>
             </div>
-            <img src={proyecto.imagen} className="proyectos-img"></img>
+            <img src={proyecto.imagen} className="proyectos-img" alt="imagen de proyecto"></img>
         </div>
     )
     
