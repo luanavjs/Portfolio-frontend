@@ -10,7 +10,7 @@ import Contacto from '../contacto/contacto'
 const Home = () => {
     return(
         <div className="home">
-            <Container className="homee">
+            <Container className="homee" >
                 <Row>
                     <Col sm={4}>
                         <div>
