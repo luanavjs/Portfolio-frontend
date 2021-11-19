@@ -28,7 +28,7 @@ const Home = () => {
                     </Col>
                     <Col sm={8} className="intro">
                     <h2>¡Hola! Soy</h2>
-                    <h1 className="titulo">{informacion.nombre} {informacion.apellido}</h1>
+                    <h1 className="titulo">{informacion.nombre}  {informacion.apellido}</h1>
                         <p className="descripcion">{informacion.descripcion}</p>
                         <div className="botones">
                             <CustomButton texto="Contacto" link="#contacto"/>
