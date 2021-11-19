@@ -34,7 +34,6 @@ const Home = () => {
                             <CustomButton texto="Contacto" link="#contacto"/>
                             <CustomButton texto="Descargar CV" link="https://drive.google.com/file/d/19Oh8kFm2rWdtmCp8KWS0coCVcR1OyCEX/view?usp=sharing"/>
                         </div>
-                        
                     </Col>
                 </Row>
             </Container>
