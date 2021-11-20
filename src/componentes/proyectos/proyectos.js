@@ -8,7 +8,7 @@ import Separador from '../comun/separador/separador';
 const Proyectos = () => {
     const data = ProyectosData;
     return(
-        <div className="proyectos" id="proyectos" >
+        <div className="proyectos" id="proyectos">
             <Separador/>
             <h2>Proyectos</h2>
             <div>

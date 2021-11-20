@@ -1,16 +1,15 @@
-import React,{useEffect} from "react";
+import React from "react";
 import './skills.css';
 import Separador from '../comun/separador/separador';
 import {SkillsData} from '../data/skills';
 import SkillsCards from './conocimientos-cards';
-import aos from 'aos';
 
 
 const Conocimientos = () => {
     const data = SkillsData;
-    useEffect(()=>{
+    /*useEffect(()=>{
         aos.init();
-    },[])
+    },[])*/
 
     return(
         <div className="skills" id="skills">
@@ -18,9 +17,7 @@ const Conocimientos = () => {
                 <h2 className="skills-titulo">Conocimientos</h2>
                 <div className="skills-container" >
                     {data.map((item)=>{ return(
-                        <div className="skills-section" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                        <div className="skills-section">
                         <label className="skills-section-titulo">{item.type}</label>
                         <div className="skills-lista">
                             {item.list.map((skill)=>{

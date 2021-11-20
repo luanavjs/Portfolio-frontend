@@ -1,13 +1,12 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './proyectos-cards.css'
-import aos from 'aos'
 
 const ProyectosCards = ({proyecto,key}) =>{ 
-    useEffect(()=>{
+    /*useEffect(()=>{
         aos.init();
-    },[])
+    },[])*/
     return(
-        <div key={key} className="proyectos-cards" data-aos="zoom-out-left">
+        <div key={key} className="proyectos-cards">
             <div className="proyectos-info">
                 <label className="proyectos-titulo">{proyecto.titulo}</label>
                 <div className="proyecto-links">
