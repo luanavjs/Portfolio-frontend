@@ -6,14 +6,14 @@ import Separador from '../comun/separador/separador';
 
 
 const Proyectos = () => {
-    const data = ProyectosData
+    const data = ProyectosData;
     return(
-        <div className="proyectos" id="proyectos">
+        <div className="proyectos" id="proyectos" >
             <Separador/>
             <h2>Proyectos</h2>
             <div>
-                {data.map((proyecto)=>{
-                    return <ProyectosCards proyecto={proyecto}/>;
+                {data.map((proyecto,indice)=>{
+                    return <ProyectosCards proyecto={proyecto} key={indice}/>;
                 })}
             </div>
         </div>

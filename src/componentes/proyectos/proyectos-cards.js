@@ -1,27 +1,31 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './proyectos-cards.css'
+import aos from 'aos'
 
-const ProyectosCards = ({proyecto}) =>{ 
+const ProyectosCards = ({proyecto,key}) =>{ 
+    useEffect(()=>{
+        aos.init();
+    },[])
     return(
-        <div className="proyectos-cards">
+        <div key={key} className="proyectos-cards" data-aos="zoom-out-left">
             <div className="proyectos-info">
                 <label className="proyectos-titulo">{proyecto.titulo}</label>
                 <div className="proyecto-links">
                     {proyecto.link &&  (<a className="proyecto-link" href={proyecto.link}>
                             <div className="proyecto-boton">
-                                <i class="bi bi-globe2"></i> Link
+                                <i className="bi bi-globe2"></i> Link
                             </div>
                         </a>)}
                         {proyecto.github &&  (<a className="proyecto-link" href={proyecto.github}>
                             <div className="proyecto-boton">
-                            <i class="bi bi-github"></i> Github
+                            <i className="bi bi-github"></i> Github
                             </div>
                         </a>)}
                 </div>
                 <p>{proyecto.descripcion}</p>
                 <div className="proyecto-tags">
-                    {proyecto.tags.map((etiqueta)=>{
-                        return <label className="etiqueta">{etiqueta}</label>
+                    {proyecto.tags.map((etiqueta, indice)=>{
+                        return <label className="etiqueta" key={indice}>{etiqueta}</label>
                     })}
                 </div>
             </div>
